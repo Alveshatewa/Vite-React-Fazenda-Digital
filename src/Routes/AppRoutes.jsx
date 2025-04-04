@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home'
 import AnimalDetails from '../pages/Animal/AnimalDetails/AnimalDetails'
 import AnimalListed from '../pages/Animal/AnimalListed/AnimalListed'
@@ -91,7 +91,7 @@ const AppRoutes = () => {
 
   return (
 
-    <HashRouter>
+
 
       <Routes>
 
@@ -116,7 +116,7 @@ const AppRoutes = () => {
       </Routes>
 
       
-    </HashRouter>
+  
   )
 }
 
