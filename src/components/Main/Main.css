@@ -1,0 +1,58 @@
+@import url('../../index.css');
+
+.Main--Content{
+
+    display: flex;
+    width: 100%;
+    color: #000000;
+    height: 100svh;
+}
+
+.Main--Content-Welcome {
+
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    color: inherit;
+
+}
+
+.Main-title{
+    
+    color: rgb(7, 198, 26);
+    font-weight: 700;
+}
+
+/*Added Style*/
+
+.animal-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .animal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .alert {
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+  
+  .input-group {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .input-group-text {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+

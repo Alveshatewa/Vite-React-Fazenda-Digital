@@ -1,0 +1,122 @@
+
+.Container{
+
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(136, 246, 10, 0.858);
+    
+}
+
+.title{
+
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    color: rgb(0, 51, 255);
+}
+
+.Login-form{
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 51, 255);
+    padding: 20px;
+    gap: 10px;
+}
+
+span{
+
+    text-decoration: none;
+}
+
+.account{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /* Added Style*/
+
+ .login-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .login-card {
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  
+  .login-card .card-header {
+    border-bottom: none;
+  }
+  
+  .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+  }
+  
+  .input-group-text {
+    background-color: #e9ecef;
+    border-right: none;
+  }
+  
+  .input-group .form-control {
+    border-left: none;
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline-primary {
+    color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  @media (max-width: 575.98px) {
+    .login-page {
+      padding: 1rem;
+    }
+    
+    .login-card {
+      border-radius: 0;
+      box-shadow: none;
+    }
+    
+    .login-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }

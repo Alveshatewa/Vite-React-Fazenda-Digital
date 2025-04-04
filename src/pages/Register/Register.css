@@ -1,0 +1,140 @@
+
+.Container{
+    
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(136, 246, 10, 0.858);
+    display: flex;
+    flex-flow: column;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    color: rgb(0, 51, 255);
+}
+
+.Register-form{
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 50%;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 51, 255);
+   
+}
+
+.account{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+label, input{
+
+    text-overflow: hidden;
+}
+
+/*Added style*/
+
+.register-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .register-success-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .success-icon {
+    font-size: 5rem;
+    color: #28a745;
+  }
+  
+  .register-card {
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+  }
+  
+  .register-card .card-header {
+    padding: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group-text {
+    background-color: #e9ecef;
+    border-right: none;
+  }
+  
+  .form-control, .form-select {
+    padding: 0.75rem 1rem;
+    border-radius: 8px !important;
+  }
+  
+  .form-control:focus, .form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline-secondary {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-secondary:hover {
+    transform: translateY(-2px);
+  }
+  
+  .form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .form-check-label a {
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .form-check-label a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 767.98px) {
+    .register-card {
+      border-radius: 0;
+      box-shadow: none;
+    }
+    
+    .register-card .card-header {
+      padding: 1rem;
+    }
+  }

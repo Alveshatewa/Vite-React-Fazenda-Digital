@@ -1,0 +1,244 @@
+@import url('../../index.css');
+
+
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.Header--Menu{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(to right, #30f297, #e6e208);
+    color: #ffffff;
+    padding: 20px;
+    /* Colocar um box shadow aqui...*/
+}
+
+.Header--Logo {
+
+    font-weight: bold;
+    font-size: x-large;
+    left: 10px;
+    color: blue;
+}
+.Header--Logo span {
+
+    color: #ff7707;
+}
+
+.Header--Menu__itens {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    padding: 20px;
+
+
+}
+
+.Header--Menu__itens > ul {
+
+    display: inherit;
+    gap: inherit;
+    
+}
+
+.Header--Menu__itens > ul > li {
+
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.Header--Menu__itens > ul > li > a {
+
+    list-style: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.Header--Menu__itens > ul > li > a:hover {
+
+  color: #afad25;
+  transition: all ease-in-out;
+}
+
+.Header--Section-Buttons{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: right;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.Header--Section-Buttons > span{
+
+    background-color: #ffffff;
+    width: auto;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+.Header--Section-Buttons > span > a {
+
+    text-decoration: none;
+}
+
+
+span{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: #ffca2c;
+}
+
+
+/*Added Style*/
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    padding: 0.8rem 1rem;
+    background-color: #28a745 !important;
+  }
+  
+  .header-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    margin: 0.2rem 0;
+  }
+  
+  .nav-link:hover, 
+  .nav-link.active {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  
+  .dropdown-item {
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #28a745;
+  }
+  
+  .btn-cta {
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animação de pulsar */
+  .pulse-animation {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+    }
+    70% {
+      transform: scale(1.02);
+      box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+    }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding: 1rem 0;
+      background-color: #28a745;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-item {
+      margin: 0.2rem 0;
+    }
+    
+    .btn-cta {
+      width: 100%;
+      justify-content: center;
+      margin: 0.5rem 0 !important;
+    }
+    
+    .dropdown-menu {
+      margin-left: 1rem;
+      width: calc(100% - 2rem);
+    }
+  }

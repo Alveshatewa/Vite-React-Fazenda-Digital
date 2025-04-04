@@ -1,0 +1,262 @@
+/* Estilos base */
+.validation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .validation-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    transition: all 0.3s ease;
+  }
+  
+  .validation-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .icon-title {
+    color: #28a745;
+  }
+  
+  .validation-subtitle {
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+  
+  /* Upload area */
+  .file-upload {
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .file-upload:hover {
+    border-color: #28a745;
+    background-color: #f8fff8;
+  }
+  
+  .file-upload.has-file {
+    border-color: #17a2b8;
+    background-color: #f7fdfe;
+  }
+  
+  .file-upload.error {
+    border-color: #dc3545;
+    background-color: #fff8f8;
+  }
+  
+  .upload-label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .upload-icon {
+    font-size: 2.5rem;
+    color: #6c757d;
+  }
+  
+  .file-upload:hover .upload-icon {
+    color: #28a745;
+  }
+  
+  .upload-text {
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  .upload-requirements {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  /* Preview */
+  .file-preview {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Mensagens */
+  .error-message {
+    color: #dc3545;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .success-message {
+    color: #28a745;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  /* Dicas */
+  .form-tips {
+    background-color: #f8f9fa;
+    border-left: 4px solid #17a2b8;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .tip-icon {
+    color: #17a2b8;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  /* Botão */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #28a745;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .validation-card {
+      padding: 20px;
+    }
+    
+    .file-upload {
+      padding: 20px;
+    }
+    
+    .validation-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .validation-container {
+      padding: 10px;
+    }
+    
+    .validation-card {
+      padding: 15px;
+    }
+    
+    .upload-icon {
+      font-size: 2rem;
+    }
+    
+    .upload-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Estilos para o estado de sucesso */
+.submission-success {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .success-message {
+    color: #28a745;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+  
+  .success-message p {
+    margin: 5px 0;
+  }
+  
+  .success-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Link para o perfil */
+  .profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-link:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .link-icon {
+    font-size: 1rem;
+  }

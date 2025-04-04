@@ -1,0 +1,152 @@
+@import url('../../index.css');
+
+
+.Footer-Container {
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    color: #000000;
+    background-color: chartreuse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    
+}
+
+.background{
+
+    background-color: #0f3460;
+}
+
+/*Added Style*/
+
+.site-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-heading {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #28a745;
+  }
+  
+  .footer-contact-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-contact-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact-list svg {
+    min-width: 20px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .footer-social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social-icon {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-social-icon:hover {
+    background-color: #28a745;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  .footer-social-text,
+  .footer-newsletter-text {
+    color: #adb5bd;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-subheading {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .footer-newsletter .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+  }
+  
+  .footer-newsletter .form-control::placeholder {
+    color: #adb5bd;
+  }
+  
+  .footer-newsletter .btn {
+    padding: 0.5rem 1rem;
+  }
+  
+  .footer-bottom {
+    color: #adb5bd;
+    font-size: 0.8rem;
+  }
+  
+  @media (max-width: 767.98px) {
+    .footer-heading {
+      margin-top: 1.5rem;
+    }
+    
+    .footer-bottom .text-md-end {
+      text-align: center !important;
+      margin-top: 1rem;
+    }
+  }

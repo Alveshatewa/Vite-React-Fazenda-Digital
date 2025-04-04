@@ -1,0 +1,278 @@
+/* Estilos base */
+.buyer-profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-height: calc(100vh - 120px);
+}
+
+.buyer-profile-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+.buyer-profile-header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+}
+
+.buyer-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.buyer-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.default-avatar {
+    font-size: 2.5rem;
+    color: #4f46e5;
+}
+
+.buyer-info {
+    flex-grow: 1;
+}
+
+.buyer-info h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.buyer-email, .buyer-phone {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Seção de compras */
+.purchase-history {
+    padding: 1.5rem 2rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #334155;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.8rem;
+    margin-top: 0;
+}
+
+/* Lista de compras */
+.purchase-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.purchase-item {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 1.2rem;
+    border-left: 4px solid #4f46e5;
+    transition: all 0.3s ease;
+}
+
+.purchase-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.purchase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.purchase-header h4 {
+    margin: 0;
+    color: #1e293b;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-badge.concluída {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status-badge.cancelada {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.status-badge.pendente {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.status-badge.em transporte {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status-icon {
+    font-size: 0.9rem;
+}
+
+.purchase-details {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.purchase-notes {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed #e2e8f0;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Estados */
+.error-message {
+    color: #ef4444;
+    background: #fee2e2;
+    padding: 0.8rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.loading-purchases, .no-purchases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    color: #64748b;
+}
+
+.no-purchases-icon {
+    font-size: 2.5rem;
+    color: #cbd5e1;
+}
+
+.btn-browse {
+    background-color: #4f46e5;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-browse:hover {
+    background-color: #4338ca;
+}
+
+.small-spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #e2e8f0;
+    border-top-color: #4f46e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.buyer-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    gap: 1rem;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e2e8f0;
+    border-top-color: #4f46e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .buyer-profile-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .buyer-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .purchase-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .buyer-profile-container {
+        padding: 1rem;
+    }
+    
+    .purchase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .status-badge {
+        align-self: flex-start;
+    }
+}

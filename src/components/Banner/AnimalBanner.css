@@ -1,0 +1,202 @@
+/* AnimalBanner.css 
+
+.carousel-item > img {
+
+  width: 500px;
+  max-width: 400px;
+  height: 500px;
+  max-height: 400px;
+
+}
+
+.carousel-caption {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+.carousel-caption h5{
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: greenyellow;
+}
+
+  #animalCarousel{
+
+    margin-top: 15px;
+    background-color: #0f3460;
+   
+
+  }
+
+#animalCarousel img{
+
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 50%;
+  margin: auto;
+}
+*/
+
+.animal-banner-container {
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 500px;
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.7);
+}
+
+.carousel-caption {
+  bottom: 30%;
+  text-align: left;
+  left: 10%;
+  right: 10%;
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 8px;
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: #28a745;
+  border-color: #fff;
+  transform: scale(1.2);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 1;
+}
+
+.carousel-control-icon {
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(40, 167, 69, 0.8);
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-icon,
+.carousel-control-next:hover .carousel-control-icon {
+  background-color: #28a745;
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+  
+  .carousel-caption {
+    bottom: 20%;
+  }
+  
+  .banner-title {
+    font-size: 1.8rem;
+  }
+  
+  .banner-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 300px;
+  }
+  
+  .carousel-caption {
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .banner-content {
+    padding: 1rem;
+  }
+  
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  
+  .banner-actions .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner-actions .btn:last-child {
+    margin-bottom: 0;
+  }
+}
