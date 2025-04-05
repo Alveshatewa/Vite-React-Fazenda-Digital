@@ -91,7 +91,7 @@ const AppRoutes = () => {
 
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename="/Vite-React-Fazenda-Digital">
 
         <Routes>
 
