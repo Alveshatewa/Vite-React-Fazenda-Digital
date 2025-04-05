@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Route, Routes } from 'react-router-dom';
+import {  BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home'
 import AnimalDetails from '../pages/Animal/AnimalDetails/AnimalDetails'
 import AnimalListed from '../pages/Animal/AnimalListed/AnimalListed'
@@ -91,29 +91,31 @@ const AppRoutes = () => {
 
   return (
 
+    <BrowserRouter>
 
+        <Routes>
 
-      <Routes>
+          <Route path='/' element={<Home />} /> 
+          <Route path='/register' element={<Register />} /> 
+          <Route path='/login' element={<Login />} /> 
+          <Route path='/validate-profile' element={<ValidateProfile />} /> 
+          <Route path='/user-profile' element={<UserProfile />} /> 
+          <Route path='/profile/seller' element={<SellerProfile />} /> 
+          <Route path='/profile/buyer' element={<BuyerProfile />} /> 
+          <Route path='/admin' element={<Admin />} /> 
+          <Route path='/partner' element={<Partner />} /> 
+          <Route path='/animal-listed' element={<AnimalListed animals={ animals } />} /> 
+          <Route path='/animal-details' element={<AnimalDetails />} />  
+          <Route path='/confirm-investment/:animalId' element={<PartnerInvestConfirmation />} />
+          <Route path='/get-password' element={<ResetPassword />} />
+          <Route path='/new-password' element={<NewPassword />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/how-it-works' element={<HowItWorks />} />
+          
+          
+        </Routes>
 
-        <Route path='/' element={<Home />} /> 
-        <Route path='/register' element={<Register />} /> 
-        <Route path='/login' element={<Login />} /> 
-        <Route path='/validate-profile' element={<ValidateProfile />} /> 
-        <Route path='/user-profile' element={<UserProfile />} /> 
-        <Route path='/profile/seller' element={<SellerProfile />} /> 
-        <Route path='/profile/buyer' element={<BuyerProfile />} /> 
-        <Route path='/admin' element={<Admin />} /> 
-        <Route path='/partner' element={<Partner />} /> 
-        <Route path='/animal-listed' element={<AnimalListed animals={ animals } />} /> 
-        <Route path='/animal-details' element={<AnimalDetails />} />  
-        <Route path='/confirm-investment/:animalId' element={<PartnerInvestConfirmation />} />
-        <Route path='/get-password' element={<ResetPassword />} />
-        <Route path='/new-password' element={<NewPassword />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/how-it-works' element={<HowItWorks />} />
-        
-        
-      </Routes>
+      </BrowserRouter>
 
       
   
